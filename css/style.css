@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+.container {
+  display: grid;
+  grid-template-rows: 80vh repeat(5, max-content);
+  grid-template-columns: repeat(6, 1fr);
+}
+
+.section-title {
+  color: #ffa500;
+  text-transform: capitalize;
+  font-size: 27px;
+  text-align: center;
+  padding: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-title::before,
+.section-title::after {
+  content: "";
+  display: inline-block;
+  background-color: #000000;
+  height: 1px;
+  width: 5%;
+  margin: 0 5px;
+}
